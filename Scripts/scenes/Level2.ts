@@ -20,7 +20,7 @@ module scenes {
         this.Start();
       }
   
-      // Private Mathods
+      // Private Methods
   
   
   

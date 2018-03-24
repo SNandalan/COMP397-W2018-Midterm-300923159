@@ -23,6 +23,7 @@ module managers {
                   createjs.Sound.play("life");
                 }
 
+                //Level 2
                 if(managers.Game.scoreBoard.Score == 500) {
                   managers.Game.currentScene = config.Scene.LEVEL2;
                 }

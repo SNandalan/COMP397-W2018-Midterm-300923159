@@ -19,7 +19,7 @@ var scenes;
             _this.Start();
             return _this;
         }
-        // Private Mathods
+        // Private Methods
         // Public Methods
         // Initialize Game Variables and objects
         PlayScene.prototype.Start = function () {

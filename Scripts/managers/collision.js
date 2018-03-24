@@ -21,6 +21,7 @@ var managers;
                                     managers.Game.scoreBoard.Lives += 1;
                                     createjs.Sound.play("life");
                                 }
+                                //Level 2
                                 if (managers.Game.scoreBoard.Score == 500) {
                                     managers.Game.currentScene = config.Scene.LEVEL2;
                                 }
