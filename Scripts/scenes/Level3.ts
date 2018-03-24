@@ -37,7 +37,7 @@ module scenes {
   
         // instantiate the cloud array
         this._clouds = new Array<objects.Cloud>();
-        this._cloudNum = 3; //number of clouds in scene is 3 for level 3
+        this._cloudNum = 3; //level 3 has 3 clouds
         // loop and add each cloud to the array
         for (let count = 0; count < this._cloudNum; count++) {
           this._clouds[count] = new objects.Cloud();
@@ -50,6 +50,7 @@ module scenes {
         // create the scoreboard UI for the Scene
         this._scoreBoard = new managers.ScoreBoard();
         managers.Game.scoreBoard = this._scoreBoard;
+        managers.Game.scoreBoard.Score +=1000;
   
         this.Main();
       }
@@ -109,4 +110,3 @@ module scenes {
       }
     }
   }
-  
