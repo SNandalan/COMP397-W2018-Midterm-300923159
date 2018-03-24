@@ -64,6 +64,10 @@ var scenes;
                 this._engineSound.stop();
                 managers.Game.currentScene = config.Scene.OVER;
             }
+            //Switch to Level 2 if Score reaches 500
+            if (this._scoreBoard.Score >= 500) {
+                managers.Game.currentScene = config.Scene.LEVEL2;
+            }
         };
         // This is where the fun happens
         PlayScene.prototype.Main = function () {

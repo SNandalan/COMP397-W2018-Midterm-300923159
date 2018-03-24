@@ -100,6 +100,18 @@ module objects {
       if(this.x <= this.halfWidth) {
         this.x = this.halfWidth;
       }
+
+      if (managers.Game.currentScene == config.Scene.LEVEL2){
+        // down boundary
+      if(this.y >= 480 - this.halfHeight) {
+        this.y = 480 - this.halfHeight;
+      }
+
+      // up boundary
+      if(this.y <= this.halfHeight) {
+        this.y = this.halfHeight;
+      }
     }
+  }
   }
 }

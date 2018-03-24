@@ -8,6 +8,9 @@ module objects {
     // Constructor
     constructor() {
       super(managers.Game.assetManager.getResult("ocean"));
+      if(managers.Game.currentScene == config.Scene.LEVEL2){
+        this.rotation = -90;
+        }
       this.Start();
     }
 
@@ -15,7 +18,11 @@ module objects {
 
     // reset the objects location to some value
     private _reset():void {
-      this.y = -960;
+      if(managers.Game.currentScene == config.Scene.LEVEL2){
+        this.x = 960;
+       }else{
+         this.y = -960;
+       }
     }
 
     // move the object to some new location
